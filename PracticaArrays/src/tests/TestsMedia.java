@@ -14,8 +14,8 @@ class TestsMedia {
 
 	@BeforeAll
 	static void setup() {
-	media1 = new int[]{0,0,6,2,8,1,2,8,5,4};
-	media2 = new int[]{6,8,3,1,0,8,8,4,2,1};
+	media1 = new int[]{3,3,6,3,8,1,2,8,5,5};
+	media2 = new int[]{6,8,3,1,0,8,8,4,2,5};
 	media3 = new int[]{9,-1,3,3,7,6,6,8,5,0};
 	}
 
@@ -23,7 +23,7 @@ class TestsMedia {
 	void testMediaBien1() {
 	 
 	double numObtenido=MiArrays.mediaNotas(media1);
-	double numEsperado=3.6;
+	double numEsperado=4.4;
 
 	assertEquals(numEsperado,numObtenido);
 	}
@@ -31,7 +31,7 @@ class TestsMedia {
 	void testMediaBien2() {
 	 
 	double numObtenido=MiArrays.mediaNotas(media2);
-	double numEsperado=4.0;
+	double numEsperado=4.5;
 
 	assertEquals(numEsperado,numObtenido);
 	}
