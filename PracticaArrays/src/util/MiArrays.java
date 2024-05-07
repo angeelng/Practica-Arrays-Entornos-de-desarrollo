@@ -59,7 +59,11 @@ public abstract class MiArrays {
 		}
 		return numeroMax;
 	}
-	
+	/**
+	 * Este metodo comprueba cual de todos los numeros del array es el menor
+	 * @param notas array de enteros 
+	 * @return el numero mas bajo del array pasado por parametro
+	 */
 	public static int minimaNota (int numeros []){
 		int numeroMin = numeros [0];
 		for(int i=0;i<numeros.length;i++) {
