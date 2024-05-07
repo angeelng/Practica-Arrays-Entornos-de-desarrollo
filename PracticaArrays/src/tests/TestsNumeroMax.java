@@ -20,7 +20,7 @@ class TestsNumeroMax {
 	}
 	
 	@Test
-	void testMedianaBien1() {
+	void testNumeroMaxBien1() {
 	 
 	double numObtenido=MiArrays.maximaNota(numMayor1);
 	double numEsperado=8;
@@ -29,7 +29,7 @@ class TestsNumeroMax {
 	}
 	
 	@Test
-	void testMedianaBien2() {
+	void testNumeroMaxBien2() {
 	 
 	double numObtenido=MiArrays.maximaNota(numMayor2);
 	double numEsperado=10;
@@ -38,9 +38,9 @@ class TestsNumeroMax {
 	}
 
 	@Test
-	void testMediaMal() {
+	void testNumeroMaxMal() {
 	Exception e = assertThrows(IllegalArgumentException.class,
-	() -> MiArrays.medianaNotas(numMayor3));
+	() -> MiArrays.maximaNota(numMayor3));
 
 	String esperado = "Los numeros deben estar entre 0 y 10";
 	String obtenido = e.getMessage();

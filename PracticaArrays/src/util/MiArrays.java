@@ -45,11 +45,16 @@ public abstract class MiArrays {
 	 * @param notas array de enteros 
 	 * @return el numero mas alto del array pasado por parametro
 	 */
-	public static int maximaNota (int notas []){
-		int numeroMax = notas [0];
-		for (int i = 0; i < notas.length; i++) {
-			if (notas [i] > numeroMax) {
-				numeroMax = notas[i];
+	public static int maximaNota (int numeros []){
+		int numeroMax = numeros [0];
+		for(int i=0;i<numeros.length;i++) {
+			if(numeros[i]>10 || numeros[i]<0) {
+				throw new IllegalArgumentException("Los numeros deben estar entre 0 y 10");
+			}
+		}
+		for (int i = 0; i < numeros.length; i++) {
+			if (numeros [i] > numeroMax) {
+				numeroMax = numeros[i];
 			}
 		}
 		return numeroMax;
