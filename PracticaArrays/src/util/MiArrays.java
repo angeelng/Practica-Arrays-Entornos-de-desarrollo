@@ -60,4 +60,19 @@ public abstract class MiArrays {
 		return numeroMax;
 	}
 	
+	public static int minimaNota (int numeros []){
+		int numeroMin = numeros [0];
+		for(int i=0;i<numeros.length;i++) {
+			if(numeros[i]>10 || numeros[i]<0) {
+				throw new IllegalArgumentException("Los numeros deben estar entre 0 y 10");
+			}
+		}
+		for (int i = 0; i < numeros.length; i++) {
+			if (numeros [i] < numeroMin) {
+				numeroMin = numeros[i];
+			}
+		}
+		return numeroMin;
+	}
+	
 }
