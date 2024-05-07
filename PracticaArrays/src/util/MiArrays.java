@@ -18,7 +18,11 @@ public abstract class MiArrays {
 		}
 		return sumaNumeros/numeros.length;
 	}
-	
+	/**
+	 * Este metodo realiza la mediana de los numeros del array pasado por parametro
+	 * @param numeros array de enteros
+	 * @return la mediana de los numeros del array
+	 */
 	public static float medianaNotas (int numeros []) {
 		Arrays.sort(numeros);
 		float resultado=0;	
@@ -36,7 +40,19 @@ public abstract class MiArrays {
 		return resultado;
 		}
 	
-	
-
+	/**
+	 * Este metodo comprueba cual de todos los numeros del array es el mayor
+	 * @param notas array de enteros 
+	 * @return el numero mas alto del array pasado por parametro
+	 */
+	public static int maximaNota (int notas []){
+		int numeroMax = notas [0];
+		for (int i = 0; i < notas.length; i++) {
+			if (notas [i] > numeroMax) {
+				numeroMax = notas[i];
+			}
+		}
+		return numeroMax;
+	}
 	
 }
